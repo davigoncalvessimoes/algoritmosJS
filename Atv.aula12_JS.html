@@ -1,0 +1,31 @@
+<script>
+    /*
+    Aluno: Davi Gonçalves Simões
+    Turma: INFO2
+    Data: 10/05/2021
+
+    Faça uma função que receba por parâmetro
+    segundos, transforme e mostre em horas,
+    minutos e segundos. Exemplo, se a função
+    receber 3670 por parâmetro ela deverá mostrar
+    1 hora, 1 minuto e 10 segundos. Escreva uma
+    função principal para a entrada de dados.
+    */
+
+    function conversor(segundos)
+    {
+        let horas=parseInt(segundos/3600);
+        let minutos=parseInt((segundos-(3600*horas))/60);
+        let seg=(segundos-(3600*horas))-(minutos*60);
+        alert(`${horas} hora(s), ${minutos} minuto(s) e ${seg} segundo(s).`);
+    }
+
+    principal= () =>
+    {
+        let s=parseInt(prompt('Digite um valor de segundos: '));
+        conversor(s);
+    }
+
+    principal();
+
+</script>
