@@ -1,0 +1,38 @@
+<script>
+/*
+    Aluno: Davi Gonçalves Simões
+    Turma: INFO2
+    Data: 18/04/2021
+
+Fazer um programa em JavaScript
+que tenha uma função que receba 3 números por
+parâmetro e retorne a soma dos números ímpares.
+*/
+
+//Função que recebe 3 números por parâmetro
+function somaImpar(n1,n2,n3)
+{
+    let soma=0; let vet=[n1,n2,n3];
+    for(let num of vet)
+        if(éimpar(num))
+            soma+=num;
+    return soma;
+}
+
+//Função que confere se o número é impar ou não
+function éimpar(n)
+{
+    if(n%2!=0)
+        return true;
+    else
+        return false;
+}
+
+let n1=parseInt(prompt('Digite um número inteiro: '));
+let n2=parseInt(prompt('Digite um número inteiro: '));
+let n3=parseInt(prompt('Digite um número inteiro: '));
+
+let res=somaImpar(n1,n2,n3);
+alert('Soma dos números ímpares: '+res);
+
+</script>
