@@ -1,0 +1,87 @@
+<script>
+/* 
+Aluno: Davi Gonçalves Simões;
+Turma: INFO2;
+Data: 25/02/2021.
+*/
+let num1=parseInt(prompt('Digite um número: '));
+let num2=parseInt(prompt('Digite um número diferente: '));
+let num3=parseInt(prompt('Digite um outro número diferente: '));
+let num4=parseInt(prompt('Digite, de novo, um número diferente: '));
+let num5=parseInt(prompt('Digite, ainda, um número diferente: '));
+// numero 1 maior
+if(num1>num2 && num1>num3 && num1>num4 && num1>num5) {
+  if(num2<num1 && num2<num3 && num2<num4 && num2<num5) {
+    alert(`${num1} é o maior e ${num2}  é o menor.`)
+  }
+  else if(num3<num1 && num3<num2 && num3<num4 && num3<num5) {
+    alert(`${num1} é o maior e ${num3}  é o menor.`)
+  }
+  else if(num4<num1 && num4<num2 && num4<num3 && num4<num5) {
+    alert(`${num1} é o maior e ${num4}  é o menor.`)
+  }
+  else{
+    alert(`${num1} é o maior e ${num5}  é o menor.`)
+  }
+}
+// numero 2 maior
+else if(num2>num1 && num2>num3 && num2>num4 && num2>num5) {
+  if(num1<num2 && num1<num3 && num1<num4 && num1<num5) {
+    alert(`${num2} é o maior e ${num1}  é o menor.`)
+  }
+  else if(num3<num1 && num3<num2 && num3<num4 && num3<num5) {
+    alert(`${num2} é o maior e ${num3}  é o menor.`)
+  }
+  else if(num4<num1 && num4<num2 && num4<num3 && num4<num5) {
+    alert(`${num2} é o maior e ${num4}  é o menor.`)
+  }
+  else{
+    alert(`${num2} é o maior e ${num5}  é o menor.`)
+  }
+}
+// numero 3 maior
+else if(num3>num1 && num3>num2 && num3>num4 && num3>num5) {
+  if(num2<num1 && num2<num3 && num2<num4 && num2<num5) {
+    alert(`${num3} é o maior e ${num2}  é o menor.`)
+  }
+  else if(num1<num3 && num1<num2 && num1<num4 && num1<num5) {
+    alert(`${num3} é o maior e ${num1}  é o menor.`)
+  }
+  else if(num4<num1 && num4<num2 && num4<num3 && num4<num5) {
+    alert(`${num3} é o maior e ${num4}  é o menor.`)
+  }
+  else{
+    alert(`${num3} é o maior e ${num5}  é o menor.`)
+  }
+}
+// numero 4 maior
+else if(num4>num1 && num4>num3 && num4>num2 && num4>num5) {
+  if(num2<num1 && num2<num3 && num2<num4 && num2<num5) {
+    alert(`${num4} é o maior e ${num2}  é o menor.`)
+  }
+  else if(num3<num1 && num3<num2 && num3<num4 && num3<num5) {
+    alert(`${num4} é o maior e ${num3}  é o menor.`)
+  }
+  else if(num1<num4 && num1<num2 && num1<num3 && num1<num5) {
+    alert(`${num4} é o maior e ${num1}  é o menor.`)
+  }
+  else{
+    alert(`${num4} é o maior e ${num5}  é o menor.`)
+  }
+}
+// numero 5 maior
+else {
+  if(num2<num1 && num2<num3 && num2<num4 && num2<num5) {
+    alert(`${num5} é o maior e ${num2}  é o menor.`)
+  }
+  else if(num3<num1 && num3<num2 && num3<num4 && num3<num5) {
+    alert(`${num5} é o maior e ${num3}  é o menor.`)
+  }
+  else if(num4<num1 && num4<num2 && num4<num3 && num4<num5) {
+    alert(`${num5} é o maior e ${num4}  é o menor.`)
+  }
+  else{
+    alert(`${num5} é o maior e ${num1}  é o menor.`)
+  }
+}
+</script>
