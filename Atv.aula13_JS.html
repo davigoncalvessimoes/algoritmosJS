@@ -1,0 +1,47 @@
+<script>
+    /*
+    Aluno: Davi Gonçalves Simões
+    Turma: INFO2
+    Data: 18/05/2021
+    */
+
+leitura=()=>
+{
+    let vet=[];
+    for(let i=0;i<10;i++)
+        vet.push(parseFloat(prompt('Digite um número')));
+    return vet;
+}
+
+soma=(vet)=>
+{
+    let soma_vet=0;
+    for(let num of vet)
+        soma_vet+=num;
+    return soma_vet;
+}
+
+media=(vet)=>
+{
+    let media_vet=0;
+    for(let num of vet)
+    {
+        media_vet+=num;
+    }
+    media_vet=media_vet/10;
+    return media_vet;
+}
+
+principal=()=>
+{
+    let vetor=leitura();
+    let somatorio=soma(vetor);
+    let media_vetor=media(vetor);
+    alert(`Vetor: ${vetor}`);
+    alert(`Soma dos valores do vetor: ${somatorio}`);
+    alert(`Média dos valores do vetor: ${media_vetor}`);
+}
+
+principal();
+
+</script>
