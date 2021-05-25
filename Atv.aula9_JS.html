@@ -1,0 +1,45 @@
+<script>
+/*
+Aluno: Davi Gonçalves Simões
+Turma: INFO2
+Data: 03/04/2021
+*/ 
+let vet=[];
+for(let i=0;i<5;i++){
+  num=parseInt(prompt('Digite um número: '));
+  vet.push(num);
+}
+
+//1)
+let quant=vet.length; let ult=quant-1; let vet_inv=[];
+for(let i=ult;i>=0;i--){
+  vet_inv.push(vet[i]);
+}
+alert(`Lista original: ${vet}.`)
+alert(`Lista invertida: ${vet_inv}.`);
+
+//2)
+let soma=0;
+for(let num of vet){
+  if(num%3==0){
+    soma+=num;
+  }
+}
+alert(`A soma dos múltiplos de 3 é: ${soma}.`);
+
+//3)
+let maior=vet[0]; let menor=vet[0];
+for(let num of vet){
+  if(num>maior){
+    maior=num;
+  }
+  else{
+    if(num<menor){
+      menor=num;
+    }
+  }
+}
+alert(`Maior: ${maior}.`);
+alert(`Menor: ${menor}.`);
+
+</script>
